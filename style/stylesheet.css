@@ -1,0 +1,90 @@
+
+h2{
+
+  text-align:  center;
+
+
+}
+
+.info{
+  text-align: center;
+  font: Ariel;
+  line-height: 1.5;
+}
+
+.grafisch{
+  /*display: none;*/
+}
+
+#canvas{
+  width: 450px;
+  height: 500px;
+  border: 1px solid #d3d3d3;
+  margin: 50px 25%;
+
+}
+
+.input{
+  overflow: hidden;
+  width: fit-contend;
+  margin-top: 50px;
+}
+.linInput{
+  width: fit-contend;
+  float:left;
+  margin-left: 15% ;
+}
+.logInput{
+  width: fit-contend;
+  float:right;
+  margin-right: 15% ;
+}
+
+
+.scale{
+  margin-left: 40%;
+  margin-top: 30px;
+}
+
+
+.xCheckboxes{
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.yCheckboxes{
+  overflow: hidden;
+  margin-top:15px;
+}
+
+.logaritmische{
+  width: fit-contend;
+  float:left;
+  margin-left: 15% ;
+}
+
+.lineare{
+  width: fit-contend;
+  float: right;
+  margin-right:20%;
+}
+
+@media (max-width: 1000px) {
+  .linInput{
+    margin-left: 5% ;
+  }
+  .logInput{
+    margin-right: 5% ;
+  }
+}
+
+@media (max-width: 790px) {
+  .linInput{
+    float:none;
+    margin:20px 20% ;
+  }
+  .logInput{
+    float:none;
+    margin:20px 20% ;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Logaritmische schaal project</title>
+  <link rel="stylesheet" href="style/stylesheet.css">
+
+</head>
+
+<body>
+  <h2>Simpel</h2>
+
+  <p class="info" >Gebruik punt voor een komma.<br>
+    Anders krijg je een error <br>
+    Schrijf gewoon je nummer en druk op enter. <br>
+    Je kan bij beide vakjes schrijven.</p>
+
+  <div class="input">
+
+    <div class="linInput">
+      <label for="LineareInput">Nummer op lineare schaal</label>
+      <input type="text" id="linInput" name=LineareInput"" value="100" onChange="convertNumber(this)" >
+
+    </div>
+
+    <div class="logInput">
+      <label for="LineareInput">Nummer op logaritmische schaal</label>
+      <input type="text" id="logInput" name=LogaritmischeInput"" value="2" onChange="convertNumber(this)">
+
+    </div>
+
+
+  </div>
+
+
+  <div class="grafisch">
+    <h2>Grafisch</h2>
+    <canvas id="canvas"></canvas>
+
+
+    <div class="xCheckboxes">
+
+      <div class="logaritmische">
+        <input type="checkbox" id="logX" name="LogmaritmischeX" onChange="toggel(this)">
+        <lable for="LogmaritmischeX"> Logmaritmische X</lable>
+      </div>
+
+      <div class="lineare">
+        <input type="checkbox" id="linX" name="LinearX" onChange="toggel(this)" checked>
+        <lable for="LinearX"> Linear X</lable>
+      </div>
+
+    </div>
+
+    <div class="yCheckboxes">
+
+      <div class="logaritmische">
+        <input type="checkbox" id="logY" name="LogmaritmischeY" onChange="toggel(this)" checked>
+        <lable for="LogmaritmischeY"> Logmaritmische Y</lable>
+      </div>
+
+      <div class="lineare">
+        <input type="checkbox" id="linY" name="LinearY"  onChange="toggel(this)" >
+        <lable for="LinearY"> Linear Y</lable>
+
+      </div>
+
+    </div>
+
+    <div class="scale">
+      <label for="scale">Zooming = </label>
+      <input type="number" id="scaleInput" name="scale" onChange="scaleInput(this)"
+           min="0.01" max="100" value=1 step=0.25>
+
+    </div>
+  </div>
+
+
+  <script src="scripts/main.js" ></script>
+</body>
+
+</html>
